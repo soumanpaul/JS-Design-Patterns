@@ -1,4 +1,4 @@
-class Person {
+export  class Person {
     constructor(){
         if(typeof Person.instance == 'object'){
             return Person.instance;
@@ -6,8 +6,4 @@ class Person {
         Person.instance = this;
         return this;
     }
-    
-    
 }
-
-export default Person;
